@@ -1,6 +1,6 @@
 # 💻 StrukDat_OOP_2026
 
-> **Tugas 1 — Struktur Data & Object Oriented Programming**
+> **Tugas 1  Struktur Data & Object Oriented Programming**
 > Program penentu kategori laptop menggunakan 4 Pilar OOP dalam Java
 
 
