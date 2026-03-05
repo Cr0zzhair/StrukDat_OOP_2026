@@ -1,7 +1,16 @@
-# StrukDat_OOP_2026
-Tugas 1 Struktur data dan objek oriented program
-Nama: Bambang Nasarillah Kurniawan
-NRP : 5027251110
-Kelas : A
+# 💻 StrukDat_OOP_2026
 
-Program berisi 4 pillar OOP yang di dalamnya merupakan program penentu kategori laptop
+> **Tugas 1 — Struktur Data & Object Oriented Programming**
+> Program penentu kategori laptop menggunakan 4 Pilar OOP dalam Java
+
+
+
+## 👤 Identitas Mahasiswa
+
+| Field | Detail |
+|-------|--------|
+| **Nama** | Bambang Nasarillah Kurniawan |
+| **NRP** | 5027251110 |
+| **Kelas** | A |
+
+
