@@ -3,8 +3,8 @@ public class App {
         
 
         // class abstak <new variable> new <class inhere>(<constructor>)
-        Laptop Laptop1 = new LaptopGaming("MSI", "NVIDA", "merah", 12000);
-        Laptop Laptop2 = new LaptopOffice("Asus", "Intel", "Biru", 8000);
+        Laptop Laptop1 = new LaptopGaming("MSI", "NVIDA", "merah", 12000, "IYA");
+        Laptop Laptop2 = new LaptopOffice("Asus", "Intel", "Biru", 8000, "Tidak");
         Laptop Laptop3 = new LaptopMurah("Advan", "Intel Home", "Putih", 1300);
         Laptop1.tampilSpec();
         Laptop2.tampilSpec();
@@ -47,10 +47,19 @@ abstract class Laptop {
 
 class LaptopGaming extends Laptop {
 
+    private String RGB;
+
+   
+
     
 
-    LaptopGaming(String n, String g, String w, int h){
+    LaptopGaming(String n, String g, String w, int h, String R){
         super(n, g, w ,h);
+        this.RGB = R;
+    }
+
+     public String getRGB(){
+        return RGB;
     }
 
     @Override
@@ -59,6 +68,7 @@ class LaptopGaming extends Laptop {
         System.out.println("GPU: " + getGPU());
         System.out.println("Warna: " + getWarna());
         System.out.println("Harga: " + getHarga());
+        System.out.println("RGB: " + getRGB());
         System.err.println("==============");
 
     }
@@ -67,9 +77,17 @@ class LaptopGaming extends Laptop {
 }
 
 class LaptopOffice extends Laptop {
-    // <Constructor harus sama dengan nama:
-    LaptopOffice(String n, String g, String w, int h){
+    
+    private String rec;
+
+
+    LaptopOffice(String n, String g, String w, int h, String r){
         super(n, g, w, h);
+        this.rec = r;
+    }
+
+    public String getRec(){
+        return rec;
     }
 
     @Override
@@ -77,7 +95,8 @@ class LaptopOffice extends Laptop {
     System.out.println("Name: " + getName());
     System.out.println("GPU: " + getGPU());
     System.out.println("Warna: " + getWarna());
-    System.out.println("Harga: " + getHarga());        
+    System.out.println("Harga: " + getHarga());
+     System.out.println("Rekomendasi: " + getRec());        
 
     }
 
@@ -108,4 +127,3 @@ class LaptopMurah extends Laptop {
 
 
 
-// ba  
